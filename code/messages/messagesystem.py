@@ -3,7 +3,7 @@ class MessageSystem:
         def __init__(self):
             self.channels = {}
             
-        def sendMessage(self, message, channels):
+        def SendMessage(self, message, channels):
             for channel in channels:
                 if self.channels.has_key(channel):
                     for listener in self.channels[channel]:
